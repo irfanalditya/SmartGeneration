@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart Generation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert2.min.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap">
+      <!-- Navbar -->
+      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="site-logo">
+              <a href="index.html" class="d-block">
+                <img src="images/logo3.png" alt="Image" class="img-fluid dash-logo">
+              </a>
+            </div>
+            <div class="mr-auto">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li>
+                    <a href="index.html" class="nav-link text-left">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="nav-link text-left">About Us</a>
+                  </li>
+                  <li>
+                    <a href="courses.html" class="nav-link text-left">Courses</a>
+                  </li>
+                  <li class="active">
+                      <a href="contact.html" class="nav-link text-left">Contact</a>
+                    </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="ml-auto">
+              <a href="#" class="small mr-3"><span class="icon-phone2 mr-2"></span> +62 812 3456 7891</a> <br>
+              <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> smartgeneration@gmail.com</a> 
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/contact.jpg')">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-lg-7">
+              <h2 class="mb-0">Contact</h2>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-breadcrumns border-bottom">
+        <div class="container">
+          <a href="index.html">Home</a>
+          <span class="mx-3 icon-keyboard_arrow_right"></span>
+          <span class="current">Contact</span>
+        </div>
+      </div>
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class= "col-md-6 form-group">
+              <label for="fname" class="block">Nama Depan <span class="text-danger">*</span></label>
+              <div class="input-group" id="forfname">
+                <input type="text" id="fname" class="form-control form-control-lg">
+              </div>
+              <small></small>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="lname">Nama Belakang</label>
+              <div class="input-group" id="forlname">
+                <input type="text" id="lname" class="form-control form-control-lg">
+              </div>
+              <small></small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="eaddress">Email <span class="text-danger">*</span></label>
+              <div class="input-group" id="foreaddress">
+                <input type="text" id="eaddress" class="form-control form-control-lg">
+              </div>
+              <small></small>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="tel">No Telepon <span class="text-danger">*</span></label>
+              <div class="input-group" id="fortel">
+                <input type="text" id="tel" class="form-control form-control-lg">
+              </div>
+              <small></small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="message">Pesan <span class="text-danger">*</span></label>
+              <div class="input-group" id="formessage">
+                <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+              <small></small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button class="btn btn-primary btn-lg px-5" onclick="sendMessage()">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="mb-4"><img src="images/logo3.png" alt="Image" class="img-fluid"></p>
+              <p>Smart Generation adalah platform pembelajaran yang dirancang untuk membantu Anda mengembangkan keterampilan dan pengetahuan baru diberbagai bidang. </p>  
+              <p><a href="about.html">Selengkapnya</a></p>
+            </div>
+            <div class="col-lg-3 ml-5">
+              <h3 class="footer-heading"><span>Our Courses</span></h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Cybersecurity</a></li>
+                <li><a href="#">Mobile Development</a></li>
+                <li><a href="#">Game Development</a></li>
+                <li><a href="#">Data Science</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="footer-heading"><span>Have a questions?</span></h3>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-phone2 mr-2"></span> +62 812 3456 7891</a></li>
+                <li><a href="#"><span class="icon-envelope-o mr-2"></span> smartgeneration@gmail.com</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="plugin/sweetalert/sweetalert2.min.js"></script>
+
+    <script type="text/javascript">
+      function sendMessage() {
+        var formValid = true;
+        var fname = $("#fname").val();
+        var lname = $("#lname").val();
+        var eaddress = $("#eaddress").val();
+        var tel = $("#tel").val();
+        var message = $("#message").val();
+  
+        if(fname.length < 1) {
+          showError(document.querySelector('#forfname'), 'Nama Depan harus diisi.');
+          $("#forfname").addClass('form-control-danger');
+          formValid = false
+        } else {
+          showSuccess(document.querySelector('#forfname'));
+        }
+  
+        if(eaddress.length < 1) {
+          showError(document.querySelector('#foreaddress'), 'Email harus diisi.');
+          $("#foreaddress").addClass('form-control-danger');
+          formValid = false
+        } else {
+          showSuccess(document.querySelector('#foreaddress'));
+        }
+  
+        if(tel.length < 1) {
+          showError(document.querySelector('#fortel'), 'No Telepon harus diisi.');
+          $("#fortel").addClass('form-control-danger');
+          formValid = false
+        } else {
+          showSuccess(document.querySelector('#fortel'));
+        }
+  
+        if(message.length < 1) {
+          showError(document.querySelector('#formessage'), 'Pesan harus diisi.');
+          $("#formessage").addClass('form-control-danger');
+          formValid = false
+        } else {
+          showSuccess(document.querySelector('#formessage'));
+        }
+  
+        if(formValid) {
+          Swal.fire(
+            'Berhasil!',
+            'Pesan Anda berhasil terkirim.',
+            'success'
+          ).then((back) => {
+            if (back.value) {
+              location.href = 'contact.html';
+            }
+          });
+        }
+      }
+
+      function showError(input, message) {
+    		const formField = input.parentElement;
+    
+        formField.classList.remove('success');
+		    formField.classList.add('text-danger');
+
+        const error = formField.querySelector('small');
+        error.textContent = message;
+      }
+
+    function showSuccess(input) {
+      const formField = input.parentElement;
+
+      formField.classList.remove('text-danger');
+      formField.classList.add('success');
+
+      const error = formField.querySelector('small');
+      error.textContent = '';
+    }
+    </script>
+  </body>
+</html>
